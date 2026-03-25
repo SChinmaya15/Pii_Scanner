@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "PiiScanner.API.Controllers.ScanController",
+    "Method": "Scan",
+    "RelativePath": "api/Scan",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

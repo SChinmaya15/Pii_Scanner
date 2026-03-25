@@ -1,0 +1,15 @@
+C:\Develop\PiiScanner\PiiScanner.Infrastructure\bin\Debug\net8.0\PiiScanner.Infrastructure.deps.json
+C:\Develop\PiiScanner\PiiScanner.Infrastructure\bin\Debug\net8.0\PiiScanner.Infrastructure.dll
+C:\Develop\PiiScanner\PiiScanner.Infrastructure\bin\Debug\net8.0\PiiScanner.Infrastructure.pdb
+C:\Develop\PiiScanner\PiiScanner.Infrastructure\bin\Debug\net8.0\PiiScanner.Domain.dll
+C:\Develop\PiiScanner\PiiScanner.Infrastructure\bin\Debug\net8.0\PiiScanner.Domain.pdb
+C:\Develop\PiiScanner\PiiScanner.Infrastructure\obj\Debug\net8.0\PiiScanner.Infrastructure.csproj.AssemblyReference.cache
+C:\Develop\PiiScanner\PiiScanner.Infrastructure\obj\Debug\net8.0\PiiScanner.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Develop\PiiScanner\PiiScanner.Infrastructure\obj\Debug\net8.0\PiiScanner.Infrastructure.AssemblyInfoInputs.cache
+C:\Develop\PiiScanner\PiiScanner.Infrastructure\obj\Debug\net8.0\PiiScanner.Infrastructure.AssemblyInfo.cs
+C:\Develop\PiiScanner\PiiScanner.Infrastructure\obj\Debug\net8.0\PiiScanner.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Develop\PiiScanner\PiiScanner.Infrastructure\obj\Debug\net8.0\PiiScann.4BF7210B.Up2Date
+C:\Develop\PiiScanner\PiiScanner.Infrastructure\obj\Debug\net8.0\PiiScanner.Infrastructure.dll
+C:\Develop\PiiScanner\PiiScanner.Infrastructure\obj\Debug\net8.0\refint\PiiScanner.Infrastructure.dll
+C:\Develop\PiiScanner\PiiScanner.Infrastructure\obj\Debug\net8.0\PiiScanner.Infrastructure.pdb
+C:\Develop\PiiScanner\PiiScanner.Infrastructure\obj\Debug\net8.0\ref\PiiScanner.Infrastructure.dll

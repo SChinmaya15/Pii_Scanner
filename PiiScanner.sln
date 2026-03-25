@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37012.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiiScanner.API", "PiiScanner.API\PiiScanner.API.csproj", "{133CD84D-1956-42AB-99CE-0A8CC134DB5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiiScanner.Domain", "PiiScanner.Domain\PiiScanner.Domain.csproj", "{1F1EB748-25E3-41B3-BB96-A7DD6BBDAA4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiiScanner.Application", "PiiScanner.Application\PiiScanner.Application.csproj", "{56588003-C4E9-47B6-8432-0EA22713D476}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiiScanner.Infrastructure", "PiiScanner.Infrastructure\PiiScanner.Infrastructure.csproj", "{BC982032-4F0F-4C34-8F71-48931FA340E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PiiScanner.Worker", "PiiScanner.Worker\PiiScanner.Worker.csproj", "{83DB440F-206E-4930-ACD3-0E0051F89596}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{133CD84D-1956-42AB-99CE-0A8CC134DB5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{133CD84D-1956-42AB-99CE-0A8CC134DB5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{133CD84D-1956-42AB-99CE-0A8CC134DB5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{133CD84D-1956-42AB-99CE-0A8CC134DB5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F1EB748-25E3-41B3-BB96-A7DD6BBDAA4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F1EB748-25E3-41B3-BB96-A7DD6BBDAA4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F1EB748-25E3-41B3-BB96-A7DD6BBDAA4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F1EB748-25E3-41B3-BB96-A7DD6BBDAA4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56588003-C4E9-47B6-8432-0EA22713D476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56588003-C4E9-47B6-8432-0EA22713D476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56588003-C4E9-47B6-8432-0EA22713D476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56588003-C4E9-47B6-8432-0EA22713D476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC982032-4F0F-4C34-8F71-48931FA340E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC982032-4F0F-4C34-8F71-48931FA340E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC982032-4F0F-4C34-8F71-48931FA340E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC982032-4F0F-4C34-8F71-48931FA340E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83DB440F-206E-4930-ACD3-0E0051F89596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83DB440F-206E-4930-ACD3-0E0051F89596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83DB440F-206E-4930-ACD3-0E0051F89596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83DB440F-206E-4930-ACD3-0E0051F89596}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {71D5B5D2-B0A3-4471-B5B9-8A8306E06153}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+C:\Develop\PiiScanner\PiiScanner.Domain\bin\Debug\net8.0\PiiScanner.Domain.deps.json
+C:\Develop\PiiScanner\PiiScanner.Domain\bin\Debug\net8.0\PiiScanner.Domain.dll
+C:\Develop\PiiScanner\PiiScanner.Domain\bin\Debug\net8.0\PiiScanner.Domain.pdb
+C:\Develop\PiiScanner\PiiScanner.Domain\obj\Debug\net8.0\PiiScanner.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Develop\PiiScanner\PiiScanner.Domain\obj\Debug\net8.0\PiiScanner.Domain.AssemblyInfoInputs.cache
+C:\Develop\PiiScanner\PiiScanner.Domain\obj\Debug\net8.0\PiiScanner.Domain.AssemblyInfo.cs
+C:\Develop\PiiScanner\PiiScanner.Domain\obj\Debug\net8.0\PiiScanner.Domain.csproj.CoreCompileInputs.cache
+C:\Develop\PiiScanner\PiiScanner.Domain\obj\Debug\net8.0\PiiScanner.Domain.dll
+C:\Develop\PiiScanner\PiiScanner.Domain\obj\Debug\net8.0\refint\PiiScanner.Domain.dll
+C:\Develop\PiiScanner\PiiScanner.Domain\obj\Debug\net8.0\PiiScanner.Domain.pdb
+C:\Develop\PiiScanner\PiiScanner.Domain\obj\Debug\net8.0\ref\PiiScanner.Domain.dll
