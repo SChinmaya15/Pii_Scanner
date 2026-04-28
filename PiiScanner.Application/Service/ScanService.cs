@@ -45,5 +45,16 @@ namespace PiiScanner.Application.Service
 
             return results;
         }
+
+        // Implement CreateScan to conform to IScanService (returns list of detected pii strings)
+        public async Task<List<string>> CreateScan(Scan scan)
+        {
+            // For now, perform a simple detection on the scan.Name and return detected PII types
+            var contentToScan = scan.Name ?? string.Empty;
+            var detected = await _piiDetector.DetectAsync(contentToScan);
+
+            // In a fuller implementation you might persist a Scan document via a repository
+            return detected;
+        }
     }
 }
