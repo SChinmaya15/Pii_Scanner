@@ -1,4 +1,4 @@
-using Microsoft.OpenApi.Models;
+﻿using Microsoft.OpenApi.Models;
 using PiiScanner.Application.Service;
 using PiiScanner.Domain.Interface;
 using PiiScanner.Infrastructure;
@@ -63,11 +63,16 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
-
+// Enable static files
+app.UseDefaultFiles();
+app.UseStaticFiles();
+// 🔑 ROUTING MUST COME FIRST
+app.UseRouting();
+// 🔐 AUTH MUST BE AFTER ROUTING
+app.UseAuthentication();
+app.UseAuthorization();
 // Enable CORS globally using the defined policy. Must be placed before UseAuthorization and MapControllers.
 app.UseCors("AllowAll");
-
-app.UseAuthorization();
 
 app.MapControllers();
 
