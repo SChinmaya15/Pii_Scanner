@@ -11,28 +11,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '8.0.x'
 
-      - name: Restore dependencies
-        run: dotnet restore PiiScanner.API.csproj
+      - name: Restore
+        run: dotnet restore ./PiiScanner.API/PiiScanner.API.csproj
 
       - name: Build
-        run: dotnet build PiiScanner.API.csproj --configuration Release --no-restore
+        run: dotnet build ./PiiScanner.API/PiiScanner.API.csproj --configuration Release --no-restore
 
       - name: Publish
-        run: dotnet publish PiiScanner.API.csproj -c Release -o publish
+        run: dotnet publish ./PiiScanner.API/PiiScanner.API.csproj --configuration Release --output ./publish
 
-      - name: Upload publish artifacts
+      - name: Verify Publish Output
+        run: ls -la ./publish
+
+      - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: published-app
-          path: publish
+          path: ./publish
 
   deploy:
     runs-on: ubuntu-latest
@@ -43,11 +45,14 @@ jobs:
       contents: read
 
     steps:
-      - name: Download artifacts
+      - name: Download artifact
         uses: actions/download-artifact@v4
         with:
           name: published-app
-          path: publish
+          path: ./publish
+
+      - name: Verify Downloaded Files
+        run: ls -la ./publish
 
       - name: Azure Login
         uses: azure/login@v2
@@ -56,9 +61,8 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_8C687DD131974B469FECBA9E5DADF558 }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_DD3D7472928A4B5E9E21FEE2CCE703B3 }}
 
-      - name: Deploy to Azure Web App
+      - name: Deploy
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'pii-scanner'
-          slot-name: 'Production'
-          package: publish
+          app-name: pii-scanner
+          package: ./publish
