@@ -2,10 +2,11 @@
 
 # This stage is used when running from VS in fast mode (Default for Debug configuration)
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-USER $APP_UID
+# Run as the default image user (keep default to avoid issues on some hosts)
 WORKDIR /app
-EXPOSE 8080
-EXPOSE 8081
+# Listen on port 80 inside the container so Azure App Service (or the platform) can route requests
+EXPOSE 80
+ENV ASPNETCORE_URLS=http://+:80
 
 
 # This stage is used to build the service project
