@@ -41,38 +41,16 @@ builder.Services.AddControllers();
 // ---------------------------------------------------
 var app = builder.Build();
 
-// ---------------------------------------------------
-// Middleware Pipeline
-// ---------------------------------------------------
-
-// TEMP TEST ROUTE
-app.MapGet("/", () => "PII Scanner API Running Successfully");
-
-
-// HTTPS
 app.UseHttpsRedirection();
 
-// Static Files
-app.UseDefaultFiles();
-app.UseStaticFiles();
-
-// Routing
 app.UseRouting();
 
-// CORS
 app.UseCors("AllowAll");
 
-// Authentication
-// REMOVE THIS unless authentication is configured
-// app.UseAuthentication();
-
-// Authorization
 app.UseAuthorization();
 
-// Controllers
+app.MapGet("/", () => "PII Scanner API Running Successfully");
+
 app.MapControllers();
 
-// ---------------------------------------------------
-// Run App
-// ---------------------------------------------------
 app.Run();
